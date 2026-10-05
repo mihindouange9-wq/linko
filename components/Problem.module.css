@@ -1,0 +1,89 @@
+.problem {
+  padding-block: var(--sp-9);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: var(--sp-8);
+  align-items: start;
+}
+
+.copy {
+  display: grid;
+  gap: var(--sp-5);
+  position: sticky;
+  top: var(--sp-8);
+}
+
+.book {
+  border-top: 1px solid var(--ink);
+}
+
+.bookHead {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--sp-3) 0;
+  font-size: var(--small);
+  font-weight: 600;
+  border-bottom: 1px solid var(--rule);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: var(--sp-4);
+  min-height: 5.25rem;
+  padding-block: var(--sp-5) var(--sp-4);
+  border-bottom: 1px solid var(--rule);
+}
+
+.name {
+  --g: 560;
+  position: relative;
+  justify-self: start;
+  font-size: var(--h3);
+  font-weight: var(--g);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.strike {
+  position: absolute;
+  left: -0.1em;
+  right: -0.1em;
+  top: 55%;
+  height: 2px;
+  background: var(--ink);
+  transform-origin: left center;
+}
+
+.note {
+  font-size: var(--small);
+  color: var(--slate);
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-7);
+  }
+
+  .copy {
+    position: static;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: var(--sp-1);
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .name {
+    --g: 380;
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-05T00:00:00Z",
+  "title": "Design System: LINKO",
+  "extensions": {
+    "colorMeta": {
+      "obsidian": { "role": "neutral", "displayName": "Obsidienne", "canonical": "#111315", "tonalRamp": ["oklch(15% 0.005 240)", "oklch(22% 0.005 240)", "oklch(32% 0.005 240)", "oklch(44% 0.005 240)", "oklch(56% 0.005 240)", "oklch(70% 0.005 240)", "oklch(84% 0.005 240)", "oklch(95% 0.005 240)"] },
+      "paper": { "role": "neutral", "displayName": "Papier", "canonical": "#f5f4ef", "tonalRamp": ["oklch(15% 0.006 100)", "oklch(26% 0.006 100)", "oklch(38% 0.006 100)", "oklch(52% 0.006 100)", "oklch(66% 0.006 100)", "oklch(80% 0.006 100)", "oklch(90% 0.006 100)", "oklch(96.5% 0.006 100)"] },
+      "signal": { "role": "primary", "displayName": "Vert Signal", "canonical": "#20c77a", "tonalRamp": ["oklch(18% 0.06 160)", "oklch(30% 0.1 160)", "oklch(42% 0.13 160)", "oklch(54% 0.16 160)", "oklch(64% 0.18 160)", "oklch(74% 0.17 160)", "oklch(85% 0.12 160)", "oklch(95% 0.05 160)"] },
+      "deep": { "role": "primary", "displayName": "Vert Profond", "canonical": "#087a4b", "tonalRamp": ["oklch(16% 0.05 160)", "oklch(26% 0.08 160)", "oklch(36% 0.1 160)", "oklch(48% 0.12 160)", "oklch(58% 0.13 160)", "oklch(70% 0.12 160)", "oklch(83% 0.09 160)", "oklch(95% 0.04 160)"] },
+      "slate": { "role": "neutral", "displayName": "Slate", "canonical": "#667078", "tonalRamp": ["oklch(15% 0.01 230)", "oklch(25% 0.01 230)", "oklch(36% 0.012 230)", "oklch(49% 0.014 230)", "oklch(60% 0.014 230)", "oklch(72% 0.012 230)", "oklch(84% 0.01 230)", "oklch(95% 0.005 230)"] },
+      "soft": { "role": "neutral", "displayName": "Gris doux", "canonical": "#e8eae7", "tonalRamp": ["oklch(15% 0.004 150)", "oklch(26% 0.004 150)", "oklch(38% 0.004 150)", "oklch(52% 0.004 150)", "oklch(66% 0.004 150)", "oklch(80% 0.004 150)", "oklch(88% 0.004 150)", "oklch(93% 0.004 150)"] },
+      "rule": { "role": "neutral", "displayName": "Règle (13 % d'encre sur papier)", "canonical": "color-mix(in oklab, #111315 13%, #f5f4ef)", "tonalRamp": ["oklch(15% 0.005 120)", "oklch(26% 0.005 120)", "oklch(38% 0.005 120)", "oklch(52% 0.005 120)", "oklch(66% 0.005 120)", "oklch(78% 0.005 120)", "oklch(86% 0.005 120)", "oklch(92% 0.005 120)"] },
+      "rule-strong": { "role": "neutral", "displayName": "Règle forte (28 %)", "canonical": "color-mix(in oklab, #111315 28%, #f5f4ef)", "tonalRamp": ["oklch(15% 0.005 120)", "oklch(26% 0.005 120)", "oklch(38% 0.005 120)", "oklch(52% 0.005 120)", "oklch(64% 0.005 120)", "oklch(74% 0.005 120)", "oklch(82% 0.005 120)", "oklch(90% 0.005 120)"] },
+      "faint": { "role": "neutral", "displayName": "Faint (22 %)", "canonical": "color-mix(in oklab, #111315 22%, #f5f4ef)", "tonalRamp": ["oklch(15% 0.005 120)", "oklch(26% 0.005 120)", "oklch(38% 0.005 120)", "oklch(52% 0.005 120)", "oklch(65% 0.005 120)", "oklch(76% 0.005 120)", "oklch(84% 0.005 120)", "oklch(91% 0.005 120)"] },
+      "ink-2": { "role": "neutral", "displayName": "Encre 2", "canonical": "#1b1e21", "tonalRamp": ["oklch(15% 0.006 240)", "oklch(21% 0.006 240)", "oklch(32% 0.006 240)", "oklch(44% 0.006 240)", "oklch(56% 0.006 240)", "oklch(70% 0.006 240)", "oklch(84% 0.006 240)", "oklch(95% 0.006 240)"] },
+      "ink-rule": { "role": "neutral", "displayName": "Règle sur obsidienne", "canonical": "#2b2f33", "tonalRamp": ["oklch(15% 0.006 240)", "oklch(27% 0.006 240)", "oklch(36% 0.006 240)", "oklch(46% 0.006 240)", "oklch(58% 0.006 240)", "oklch(70% 0.006 240)", "oklch(84% 0.006 240)", "oklch(95% 0.006 240)"] },
+      "ink-rule-strong": { "role": "neutral", "displayName": "Règle forte sur obsidienne", "canonical": "#464b50", "tonalRamp": ["oklch(15% 0.007 240)", "oklch(25% 0.007 240)", "oklch(38% 0.007 240)", "oklch(48% 0.007 240)", "oklch(60% 0.007 240)", "oklch(72% 0.007 240)", "oklch(84% 0.007 240)", "oklch(95% 0.007 240)"] },
+      "ink-slate": { "role": "neutral", "displayName": "Slate d'encre", "canonical": "#9ba3a9", "tonalRamp": ["oklch(15% 0.008 230)", "oklch(26% 0.008 230)", "oklch(38% 0.008 230)", "oklch(50% 0.01 230)", "oklch(62% 0.01 230)", "oklch(71% 0.01 230)", "oklch(84% 0.008 230)", "oklch(95% 0.005 230)"] },
+      "grey-muted": { "role": "neutral", "displayName": "Gris sourd (sur gris doux)", "canonical": "#5a636a", "tonalRamp": ["oklch(15% 0.01 230)", "oklch(25% 0.01 230)", "oklch(35% 0.012 230)", "oklch(46% 0.014 230)", "oklch(58% 0.014 230)", "oklch(70% 0.012 230)", "oklch(84% 0.01 230)", "oklch(95% 0.005 230)"] },
+      "white": { "role": "neutral", "displayName": "Blanc", "canonical": "#ffffff", "tonalRamp": ["oklch(15% 0 0)", "oklch(27% 0 0)", "oklch(39% 0 0)", "oklch(52% 0 0)", "oklch(66% 0 0)", "oklch(80% 0 0)", "oklch(92% 0 0)", "oklch(100% 0 0)"] },
+      "signal-pressed": { "role": "primary", "displayName": "Signal pressé (hover)", "canonical": "#1bb56e", "tonalRamp": ["oklch(18% 0.06 160)", "oklch(30% 0.1 160)", "oklch(42% 0.13 160)", "oklch(52% 0.15 160)", "oklch(62% 0.17 160)", "oklch(72% 0.16 160)", "oklch(84% 0.12 160)", "oklch(95% 0.05 160)"] },
+      "black": { "role": "neutral", "displayName": "Noir (hover encre)", "canonical": "#000000", "tonalRamp": ["oklch(0% 0 0)", "oklch(15% 0 0)", "oklch(27% 0 0)", "oklch(39% 0 0)", "oklch(52% 0 0)", "oklch(66% 0 0)", "oklch(80% 0 0)", "oklch(95% 0 0)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Les deux titres du premier écran, chacun posé sur sa règle ; chasse 78–90 % pendant la mise en colonne." },
+      "headline": { "displayName": "Titre de chapitre", "purpose": "Un par chapitre, chasse 92 %, 16 ch maximum." },
+      "title": { "displayName": "Titre", "purpose": "Noms de fiche, sous-titres de bloc." },
+      "entry": { "displayName": "Entrée", "purpose": "Une ligne du répertoire ; graisse 320–780 et chasse 82–108 % selon la confiance de correspondance." },
+      "lead": { "displayName": "Chapeau", "purpose": "Le paragraphe d'ouverture du chapitre, en slate, 38 ch maximum." },
+      "body": { "displayName": "Texte", "purpose": "Texte courant à 420 de graisse." },
+      "small": { "displayName": "Small", "purpose": "Libellés, exemples, méta." },
+      "micro": { "displayName": "Micro", "purpose": "Notes « démonstration », compteurs." },
+      "wordmark": { "displayName": "Mot-symbole", "purpose": "« linko » en minuscules, point du ı en vert signal." }
+    },
+    "shadows": [
+      { "name": "fiche", "value": "0 30px 60px -40px rgb(17 19 21 / 0.6)", "purpose": "La planche obsidienne du profil posée sur papier." },
+      { "name": "bar-mobile", "value": "0 14px 34px -16px rgb(17 19 21 / 0.55)", "purpose": "La barre d'index fixée en bas sur mobile." },
+      { "name": "sheet-mobile", "value": "0 20px 40px -20px rgb(17 19 21 / 0.45)", "purpose": "La feuille des chapitres dépliée au-dessus de la barre." },
+      { "name": "result-tap", "value": "0 6px 16px -10px rgb(17 19 21 / 0.35)", "purpose": "Dans un écran d'application, la ligne en cours de sélection." }
+    ],
+    "motion": [
+      { "name": "t-fast", "value": "160ms", "purpose": "Couleurs, opacité, skip-link." },
+      { "name": "t-mid", "value": "420ms", "purpose": "Largeur d'onglet, graisse, soulignement, flèche de tension, repli des lignes." },
+      { "name": "t-slow", "value": "900ms", "purpose": "Déplacement du témoin de l'index." },
+      { "name": "ease-settle", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Tout ce qui se pose : soulignement, onglet, anneau du témoin, graisse." },
+      { "name": "ease-press", "value": "cubic-bezier(0.3, 0, 0.2, 1)", "purpose": "Enfoncement des boutons (70ms en :active)." },
+      { "name": "ease-search", "value": "cubic-bezier(0.65, 0, 0.35, 1)", "purpose": "Version CSS de la courbe de recherche." },
+      { "name": "linko.search", "value": "M0,0 C0.55,0 0.35,1 1,1", "purpose": "GSAP CustomEase : départ hésitant, accélération, freinage net ; balayages, traits barrés, écartement des lignes." },
+      { "name": "linko.connect", "value": "M0,0 C0.18,0 0.22,1.07 0.48,1.035 0.7,1.005 0.82,1 1,1", "purpose": "GSAP CustomEase : rapprochement, ~3.5 % de dépassement, stabilisation ; jonction des pièces et verrouillage de la graisse finale." },
+      { "name": "temoin", "value": "cubic-bezier(0.2, 0.9, 0.25, 1.06)", "purpose": "Glissement du témoin de l'index (900ms)." },
+      { "name": "breathe", "value": "3.2s ease-settle infinite (scale 1→2.4, opacity 0.7→0)", "purpose": "Anneau de respiration du point .live." }
+    ],
+    "breakpoints": [
+      { "name": "phone-stack", "value": "560px" },
+      { "name": "header-collapse", "value": "720px" },
+      { "name": "single-column", "value": "900px" },
+      { "name": "index-visible", "value": "1024px" },
+      { "name": "max", "value": "1440px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Bouton Signal",
+      "kind": "button",
+      "refersTo": "button-signal",
+      "description": "L'action principale, une fois par chapitre : fond vert signal, texte obsidienne, flèche de tension.",
+      "html": "<button class=\"ds-btn ds-btn-signal\">Trouver <span class=\"ds-tension\"></span></button>",
+      "css": ".ds-btn { --btn-bg: var(--ink, #111315); --btn-fg: var(--paper, #f5f4ef); position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0.6em; min-height: 3rem; padding: 0 1.35rem; border: 1px solid var(--btn-bg); border-radius: 6px; background: var(--btn-bg); color: var(--btn-fg); font-family: 'Mona Sans Variable', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: 1rem; letter-spacing: -0.01em; white-space: nowrap; cursor: pointer; transition: transform 160ms cubic-bezier(0.3,0,0.2,1), background-color 160ms linear, border-color 160ms linear, color 160ms linear; } .ds-btn:active { transform: scale(0.97) translateY(1px); transition-duration: 70ms; } .ds-btn:focus-visible { outline: 2px solid var(--deep, #087a4b); outline-offset: 3px; } .ds-btn-signal { --btn-bg: var(--signal, #20c77a); --btn-fg: var(--ink, #111315); } .ds-btn-signal:hover { --btn-bg: #1bb56e; } .ds-tension { display: inline-block; width: 1.1em; height: 1px; background: currentColor; position: relative; transform-origin: left center; transition: transform 420ms cubic-bezier(0.16,1,0.3,1); } .ds-tension::after { content: ''; position: absolute; right: 0; top: -3px; width: 7px; height: 7px; border-top: 1px solid currentColor; border-right: 1px solid currentColor; transform: rotate(45deg); } .ds-btn:hover .ds-tension { transform: scaleX(1.35); }"
+    },
+    {
+      "name": "Bouton Encre",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Action secondaire forte : encre sur papier (inversé sur planche obsidienne).",
+      "html": "<button class=\"ds-btn ds-btn-ink\">Appeler <span class=\"ds-tension\"></span></button>",
+      "css": ".ds-btn { --btn-bg: var(--ink, #111315); --btn-fg: var(--paper, #f5f4ef); position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0.6em; min-height: 3rem; padding: 0 1.35rem; border: 1px solid var(--btn-bg); border-radius: 6px; background: var(--btn-bg); color: var(--btn-fg); font-family: 'Mona Sans Variable', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: 1rem; letter-spacing: -0.01em; white-space: nowrap; cursor: pointer; transition: transform 160ms cubic-bezier(0.3,0,0.2,1), background-color 160ms linear, border-color 160ms linear, color 160ms linear; } .ds-btn:active { transform: scale(0.97) translateY(1px); transition-duration: 70ms; } .ds-btn:focus-visible { outline: 2px solid var(--deep, #087a4b); outline-offset: 3px; } .ds-btn-ink:hover { --btn-bg: #000; } .ds-btn:disabled { opacity: 0.45; cursor: not-allowed; } .ds-tension { display: inline-block; width: 1.1em; height: 1px; background: currentColor; position: relative; transform-origin: left center; transition: transform 420ms cubic-bezier(0.16,1,0.3,1); } .ds-tension::after { content: ''; position: absolute; right: 0; top: -3px; width: 7px; height: 7px; border-top: 1px solid currentColor; border-right: 1px solid currentColor; transform: rotate(45deg); } .ds-btn:hover .ds-tension { transform: scaleX(1.35); }"
+    },
+    {
+      "name": "Bouton Fantôme",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Action tertiaire : transparent, bordure règle forte, qui se renforce en encre au survol.",
+      "html": "<button class=\"ds-btn ds-btn-ghost\">Message</button>",
+      "css": ".ds-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0.6em; min-height: 3rem; padding: 0 1.35rem; border: 1px solid; border-radius: 6px; font-family: 'Mona Sans Variable', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: 1rem; letter-spacing: -0.01em; white-space: nowrap; cursor: pointer; transition: transform 160ms cubic-bezier(0.3,0,0.2,1), border-color 160ms linear; } .ds-btn-ghost { background: transparent; color: var(--ink, #111315); border-color: var(--rule-strong, color-mix(in oklab, #111315 28%, #f5f4ef)); } .ds-btn-ghost:hover { border-color: var(--ink, #111315); } .ds-btn:active { transform: scale(0.97) translateY(1px); transition-duration: 70ms; } .ds-btn:focus-visible { outline: 2px solid var(--deep, #087a4b); outline-offset: 3px; }"
+    },
+    {
+      "name": "L'entrée (recherche sur une règle)",
+      "kind": "input",
+      "refersTo": "input-entry",
+      "description": "Le champ de besoin : libellé, champ transparent et bouton alignés en bas sur une règle d'encre, suivis de suggestions tabulaires.",
+      "html": "<form class=\"ds-entry\"><div class=\"ds-entry-field\"><label class=\"ds-entry-label\" for=\"ds-need\">J'ai besoin d'un…</label><input id=\"ds-need\" class=\"ds-entry-input\" placeholder=\"plombier, électricien, frigoriste\" /><button type=\"button\" class=\"ds-entry-submit\">Trouver</button></div><ul class=\"ds-entry-suggest\"><li><button type=\"button\" class=\"ds-entry-chip\">Plombier</button></li><li><button type=\"button\" class=\"ds-entry-chip\">Électricien</button></li><li><button type=\"button\" class=\"ds-entry-chip\">Frigoriste</button></li></ul></form>",
+      "css": ".ds-entry { width: 100%; max-width: 44rem; font-family: 'Mona Sans Variable', 'Helvetica Neue', Arial, sans-serif; color: var(--ink, #111315); } .ds-entry-field { display: grid; grid-template-columns: auto 1fr auto; align-items: end; gap: 0.75rem; border-bottom: 1px solid var(--ink, #111315); } .ds-entry-label { font-weight: 560; white-space: nowrap; padding-bottom: 0.85rem; } .ds-entry-input { min-width: 0; height: 3rem; padding: 0; border: 0; background: transparent; outline: none; font: inherit; font-size: 1.0625rem; font-weight: 520; color: inherit; caret-color: var(--signal, #20c77a); } .ds-entry-input::placeholder { color: var(--slate, #667078); font-weight: 420; } .ds-entry-submit { min-height: 2.5rem; margin-bottom: 0.25rem; padding: 0 1.1rem; border: 1px solid var(--signal, #20c77a); border-radius: 6px; background: var(--signal, #20c77a); color: var(--ink, #111315); font: inherit; font-weight: 600; cursor: pointer; } .ds-entry-submit:hover { background: #1bb56e; } .ds-entry-submit:focus-visible { outline: 2px solid var(--deep, #087a4b); outline-offset: 3px; } .ds-entry-suggest { display: flex; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; } .ds-entry-suggest li { border-bottom: 1px solid var(--rule, color-mix(in oklab, #111315 13%, #f5f4ef)); } .ds-entry-chip { min-height: 2.5rem; padding: 0 0.85rem; border: 0; border-right: 1px solid var(--rule, color-mix(in oklab, #111315 13%, #f5f4ef)); background: transparent; font: inherit; font-size: 0.875rem; font-weight: 540; color: inherit; cursor: pointer; } .ds-entry-suggest li:first-child .ds-entry-chip { padding-left: 0; } .ds-entry-suggest li:last-child .ds-entry-chip { border-right: 0; } .ds-entry-chip:hover { color: var(--deep, #087a4b); } .ds-entry-chip:focus-visible { outline: 2px solid var(--deep, #087a4b); outline-offset: 3px; }"
+    },
+    {
+      "name": "Index à onglets",
+      "kind": "nav",
+      "refersTo": "index-tab",
+      "description": "La navigation : une pile d'onglets verticaux au bord droit, un onglet actif en obsidienne et un témoin vert qui glisse.",
+      "html": "<nav class=\"ds-index\" style=\"--active:1\"><ol><li><a class=\"ds-tab\" href=\"#\"><span class=\"ds-tab-label\">Besoin</span></a></li><li><a class=\"ds-tab\" href=\"#\" aria-current=\"location\"><span class=\"ds-tab-label\">Problème</span></a></li><li><a class=\"ds-tab\" href=\"#\"><span class=\"ds-tab-label\">Lien</span></a></li><li><a class=\"ds-tab\" href=\"#\"><span class=\"ds-tab-label\">Métiers</span></a></li></ol><span class=\"ds-temoin\"></span></nav>",
+      "css": ".ds-index { --tab-h: 3.5rem; position: relative; display: inline-block; padding-left: 1rem; font-family: 'Mona Sans Variable', 'Helvetica Neue', Arial, sans-serif; } .ds-index ol { display: flex; flex-direction: column; align-items: flex-end; margin: 0; padding: 0; list-style: none; } .ds-tab { position: relative; display: flex; align-items: center; justify-content: center; width: 2.25rem; height: var(--tab-h); border-radius: 5px 0 0 5px; border-bottom: 1px solid rgb(0 0 0 / 0.07); background: var(--soft, #e8eae7); color: var(--ink, #111315); text-decoration: none; transition: width 420ms cubic-bezier(0.16,1,0.3,1), background-color 420ms linear, color 420ms linear; } .ds-tab-label { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 0.6875rem; font-weight: 600; line-height: 1; white-space: nowrap; } .ds-tab:hover, .ds-tab:focus-visible { width: 2.75rem; } .ds-tab:focus-visible { outline: 2px solid var(--deep, #087a4b); outline-offset: 3px; } .ds-tab[aria-current='location'] { width: 3rem; background: var(--ink, #111315); color: var(--paper, #f5f4ef); } .ds-temoin { position: absolute; left: 0; top: calc(var(--tab-h) / 2 - 0.2rem); width: 0.4rem; height: 0.4rem; border-radius: 50%; background: var(--signal, #20c77a); transform: translateY(calc(var(--active) * var(--tab-h))); transition: transform 900ms cubic-bezier(0.2,0.9,0.25,1.06); }"
+    },
+    {
+      "name": "Témoin de disponibilité",
+      "kind": "chip",
+      "refersTo": "live",
+      "description": "Le point vert qui respire : « Disponible ». Variante vide pour « indisponible ».",
+      "html": "<span class=\"ds-status\"><span class=\"ds-live\"></span> Disponible</span> <span class=\"ds-status\"><span class=\"ds-live ds-live-off\"></span> Demain</span>",
+      "css": ".ds-status { display: inline-flex; align-items: center; gap: 0.5rem; margin-right: 1.5rem; font-family: 'Mona Sans Variable', 'Helvetica Neue', Arial, sans-serif; font-size: 0.875rem; font-weight: 540; color: var(--ink, #111315); } .ds-live { position: relative; display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--signal, #20c77a); flex: none; } .ds-live::after { content: ''; position: absolute; inset: 0; border-radius: 50%; border: 1px solid var(--signal, #20c77a); animation: ds-breathe 3.2s cubic-bezier(0.16,1,0.3,1) infinite; } .ds-live-off { background: transparent; border: 1px solid var(--rule-strong, color-mix(in oklab, #111315 28%, #f5f4ef)); } .ds-live-off::after { display: none; } @keyframes ds-breathe { 0% { transform: scale(1); opacity: 0.7; } 70%, 100% { transform: scale(2.4); opacity: 0; } } @media (prefers-reduced-motion: reduce) { .ds-live::after { animation: none; opacity: 0; } }"
+    },
+    {
+      "name": "Pictogramme de la paire",
+      "kind": "custom",
+      "refersTo": "pair-glyph",
+      "description": "Les deux pièces du symbole dans l'état « joined » (le logo) : besoin en obsidienne, compétence en vert signal.",
+      "html": "<svg class=\"ds-pair\" viewBox=\"0 0 120 120\" width=\"72\" height=\"72\" aria-hidden=\"true\"><g><path d=\"M21 37 V68 C21 84 38.37 94.88 48.08 87.82 L82.05 63.14\" fill=\"none\" stroke=\"var(--signal, #20c77a)\" stroke-width=\"19\" stroke-linejoin=\"round\"/><circle cx=\"21\" cy=\"15\" r=\"10.5\" fill=\"var(--signal, #20c77a)\"/></g><g transform=\"rotate(180 60 60)\"><path d=\"M21 37 V68 C21 84 38.37 94.88 48.08 87.82 L82.05 63.14\" fill=\"none\" stroke=\"var(--ink, #111315)\" stroke-width=\"19\" stroke-linejoin=\"round\"/><circle cx=\"21\" cy=\"15\" r=\"10.5\" fill=\"var(--ink, #111315)\"/></g></svg>",
+      "css": ".ds-pair { display: block; }"
+    },
+    {
+      "name": "Entrée de répertoire",
+      "kind": "card",
+      "refersTo": "entry-row",
+      "description": "Une ligne de la liste A–Z : lettre, nom en graisse variable, exemples, action verte qui apparaît au survol.",
+      "html": "<div class=\"ds-list\"><button type=\"button\" class=\"ds-row\"><span class=\"ds-row-letter\">P</span><span class=\"ds-row-name\">Plombier</span><span class=\"ds-row-ex\">fuite, chauffe-eau, robinet</span><span class=\"ds-row-go\">Chercher</span></button><button type=\"button\" class=\"ds-row\"><span class=\"ds-row-letter\">S</span><span class=\"ds-row-name\">Soudeur</span><span class=\"ds-row-ex\">portail, grille, structure</span><span class=\"ds-row-go\">Chercher</span></button></div>",
+      "css": ".ds-list { border-top: 1px solid var(--ink, #111315); font-family: 'Mona Sans Variable', 'Helvetica Neue', Arial, sans-serif; } .ds-row { display: grid; grid-template-columns: 2.25rem minmax(0,1fr) minmax(0,1fr) auto; align-items: baseline; gap: 1rem; width: 100%; padding: 1rem 0; border: 0; border-bottom: 1px solid var(--rule, color-mix(in oklab, #111315 13%, #f5f4ef)); background: transparent; text-align: left; color: var(--ink, #111315); font: inherit; cursor: pointer; } .ds-row-letter { font-size: 0.875rem; font-weight: 700; color: var(--slate, #667078); } .ds-row-name { font-size: clamp(1.6rem, 1rem + 2.2vw, 2.75rem); font-weight: 560; font-stretch: 100%; letter-spacing: -0.03em; line-height: 1.05; transition: font-weight 420ms cubic-bezier(0.16,1,0.3,1), font-stretch 420ms cubic-bezier(0.16,1,0.3,1); } .ds-row-ex { font-size: 0.875rem; color: var(--slate, #667078); } .ds-row-go { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; font-weight: 600; color: var(--deep, #087a4b); opacity: 0; transform: translateX(-0.5rem); transition: opacity 160ms linear, transform 420ms cubic-bezier(0.16,1,0.3,1); } .ds-row-go::before { content: ''; width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--signal, #20c77a); } .ds-row:hover .ds-row-name, .ds-row:focus-visible .ds-row-name { font-weight: 740; font-stretch: 108%; } .ds-row:hover .ds-row-go, .ds-row:focus-visible .ds-row-go { opacity: 1; transform: none; } .ds-row:focus-visible { outline: 2px solid var(--deep, #087a4b); outline-offset: -2px; }"
+    },
+    {
+      "name": "Planche obsidienne (fiche)",
+      "kind": "card",
+      "refersTo": "spread",
+      "description": "La fiche de profil : planche obsidienne à 14px, monogramme papier, méta en slate d'encre, témoin vert.",
+      "html": "<article class=\"ds-fiche\"><header class=\"ds-fiche-head\"><span class=\"ds-fiche-mono\">FN</span><div><h3 class=\"ds-fiche-name\">Fatou Ndiaye</h3><p class=\"ds-fiche-meta\">Électricienne · Dakar, Plateau</p></div><span class=\"ds-fiche-status\"><span class=\"ds-fiche-live\"></span> Disponible</span></header><p class=\"ds-fiche-body\">Installation, dépannage, mise aux normes. 11 ans d'expérience. Profil de démonstration.</p></article>",
+      "css": ".ds-fiche { padding: 2rem; border-radius: 14px; background: var(--ink, #111315); color: var(--paper, #f5f4ef); box-shadow: 0 30px 60px -40px rgb(17 19 21 / 0.6); font-family: 'Mona Sans Variable', 'Helvetica Neue', Arial, sans-serif; max-width: 32rem; } .ds-fiche-head { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2b2f33; } .ds-fiche-mono { display: grid; place-items: center; width: 3.5rem; height: 3.5rem; border-radius: 50%; background: var(--paper, #f5f4ef); color: var(--ink, #111315); font-weight: 720; letter-spacing: -0.02em; } .ds-fiche-name { margin: 0; font-size: 1.5rem; font-weight: 680; letter-spacing: -0.025em; line-height: 1.15; } .ds-fiche-meta { margin: 0; color: #9ba3a9; font-size: 0.875rem; } .ds-fiche-status { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; font-weight: 540; } .ds-fiche-live { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--signal, #20c77a); } .ds-fiche-body { margin: 1.5rem 0 0; font-size: 1.0625rem; font-weight: 420; line-height: 1.55; }"
+    },
+    {
+      "name": "Pastille de filtre (dans une planche)",
+      "kind": "chip",
+      "refersTo": "filter-pill",
+      "description": "Filtres des écrans d'application : les seules formes en 999px du système, bordure règle forte, actif en obsidienne.",
+      "html": "<span class=\"ds-pill ds-pill-on\">Disponible</span> <span class=\"ds-pill\">Vérifié</span> <span class=\"ds-pill\">Proche</span>",
+      "css": ".ds-pill { display: inline-block; padding: 0.2rem 0.55rem; margin-right: 0.35rem; border: 1px solid var(--rule-strong, color-mix(in oklab, #111315 28%, #f5f4ef)); border-radius: 999px; font-family: 'Mona Sans Variable', 'Helvetica Neue', Arial, sans-serif; font-size: 0.6875rem; font-weight: 560; color: var(--ink, #111315); } .ds-pill-on { background: var(--ink, #111315); border-color: var(--ink, #111315); color: var(--paper, #f5f4ef); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Le Répertoire",
+    "overview": "LINKO est le carnet d'adresses de la ville, celui où l'on garde le numéro du « bon électricien ». Tout le système découle de ce geste : une page blanc cassé, des règles (filets gris) sur lesquelles on pose des entrées, une encre obsidienne qui écrit, et un vert qui ne décore jamais mais signale (disponible, trouvé, actif, action principale). Le texte repose sur les règles ; la ligne de base est la structure, pas la boîte. Il n'y a pas de cartes qui organisent la page : ce sont les filets, les marges et les planches obsidienne qui découpent l'espace.\n\nLa densité est celle d'un index imprimé : grands titres serrés (chasse 92 %, interlettrage négatif), entrées en grande taille, métadonnées en slate. Une seule grotesque variable (Mona Sans, graisse 200–900, chasse 75–125 %) joue tous les rôles, et ses axes sont le vocabulaire de l'interface : la graisse monte quand une correspondance se confirme, s'allège et se décale quand une ligne est écartée. Le mouvement est le mécanisme du produit (séparation → recherche → rapprochement → connexion → stabilisation) et ne bouge que pour l'expliquer. Rejets confirmés par le build : dégradés, verre, blobs, particules, parallaxe, défilement infini, cartes-structure, numéros de section décoratifs, kickers, coques de téléphone, photos d'ouvriers.",
+    "keyCharacteristics": [
+      "Papier blanc cassé réglé de filets ; obsidienne pour l'encre et les planches ; vert uniquement en signal.",
+      "Une seule famille variable (Mona Sans) ; la graisse et la chasse encodent l'état.",
+      "Les entrées se posent sur des règles (`border-bottom: 1px`), jamais dans des cartes.",
+      "Un index à onglets sur le bord droit avec un témoin vert qui dit où l'on est.",
+      "Mouvement court et physique : 160 / 420 / 900 ms, courbes « settle », « search », « connect »."
+    ],
+    "rules": [
+      { "name": "La règle du Signal", "body": "Le vert n'est jamais une structure : pas de fond de section, pas de bordure décorative, pas de titre. Il n'apparaît que sur ce qui est disponible, trouvé, actif ou sur l'action principale ; en texte sur papier, c'est toujours `deep`, jamais `signal`.", "section": "colors" },
+      { "name": "La règle des trois thèmes", "body": "Un chapitre ne connaît que `paper`, `ink` ou `grey`, posés par `data-theme` sur la section ; les composants lisent `--bg`, `--fg`, `--muted`, `--line`, `--line-strong`, `--accent-text` et ne choisissent jamais leur couleur eux-mêmes.", "section": "colors" },
+      { "name": "La règle de la graisse qui juge", "body": "La confiance d'une correspondance se lit dans la graisse : ce qui se confirme s'alourdit (→ 700–780), ce qui est écarté s'amaigrit et se décale (→ 320–360, `x: 28px`). Aucune autre couleur ou icône ne porte ce jugement.", "section": "typography" },
+      { "name": "La règle du bas-de-casse", "body": "Aucun texte en capitales, aucun kicker, aucun label-surtitre : la hiérarchie passe par la taille, la graisse et la position sur la règle.", "section": "typography" },
+      { "name": "La règle du filet d'abord", "body": "Une séparation se fait par un filet de 1px (`rule`, `rule-strong`, `ink-rule`) ou par un changement de thème ; une ombre n'est admise que sous un élément fixé ou une planche obsidienne, jamais sous une carte de contenu.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do poser toute liste sur des filets de 1px (`rule`) avec une règle d'encre pleine en tête, `padding --sp-4 0`, colonnes alignées sur la ligne de base.",
+      "Do encoder l'état d'une entrée dans la graisse et la chasse de Mona Sans (320–780, 82–108 %) plutôt que dans une couleur ou une icône.",
+      "Do donner le vert `signal` aux fonds et aux points (bouton principal, témoin, `.live`, pièce compétence) et `deep` à tout texte vert sur papier.",
+      "Do choisir le thème au niveau du chapitre (`data-theme=\"paper|ink|grey\"`) et laisser les composants lire `--bg`, `--fg`, `--muted`, `--line`.",
+      "Do utiliser les quatre états du `PairGlyph` partout où un pictogramme de méthode est nécessaire, et la flèche `.tension` comme seule flèche.",
+      "Do garder les coins à 6px pour les contrôles et 10–14px pour les planches ; 999px seulement pour les pastilles internes aux planches.",
+      "Do respirer de `--sp-9` entre chapitres et de `--sp-8` entre l'en-tête de chapitre et son contenu."
+    ],
+    "donts": [
+      "Don't utiliser de dégradés, de verre (backdrop-filter), de blobs, de particules, de parallaxe ni de défilement infini.",
+      "Don't structurer une page avec des cartes : pas de boîte bordée ou ombrée autour d'un contenu qui peut se poser sur une règle.",
+      "Don't mettre `signal` (#20c77a) en texte sur papier ou gris doux (2.0:1), ni en fond de section.",
+      "Don't ajouter de kickers, de surtitres, de numéros de section décoratifs ni de texte en capitales.",
+      "Don't dessiner de coques de téléphone autour des écrans d'application ni afficher de photos d'ouvriers ; les écrans sont des planches réglées à 6px.",
+      "Don't introduire d'icônes-glyphes ou une seconde famille de caractères ; le symbole, le `PairGlyph`, le point `.live` et la flèche `.tension` sont les seuls signes.",
+      "Don't animer ce qui n'explique pas le lien besoin → compétence ; pas de révélation en cascade, pas de fade/slide généralisé."
+    ]
+  }
+}

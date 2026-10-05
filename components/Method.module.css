@@ -1,0 +1,104 @@
+.section {
+  padding-block: var(--sp-9);
+}
+
+.head {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: var(--sp-8);
+  align-items: end;
+  margin-bottom: var(--sp-8);
+}
+
+.railWrap {
+  position: relative;
+}
+
+.rail {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--rule);
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: var(--ink);
+  transform-origin: left center;
+}
+
+.step {
+  --on: 1;
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: var(--sp-4);
+  padding: var(--sp-6) var(--sp-5) 0 0;
+}
+
+/* repère sur la règle */
+.step::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--signal) calc(var(--on) * 100%), var(--rule));
+}
+
+.glyph {
+  opacity: calc(0.25 + var(--on) * 0.75);
+  margin-bottom: var(--sp-2);
+}
+
+.verb {
+  font-size: var(--h3);
+  font-weight: calc(420 + var(--on) * 260);
+  font-stretch: calc((88 + var(--on) * 12) * 1%);
+  letter-spacing: -0.025em;
+}
+
+.text {
+  color: var(--slate);
+  max-width: 30ch;
+}
+
+@media (max-width: 900px) {
+  .head {
+    grid-template-columns: 1fr;
+    gap: var(--sp-4);
+    margin-bottom: var(--sp-7);
+  }
+
+  .rail {
+    grid-template-columns: 1fr;
+    border-top: 0;
+    border-left: 1px solid var(--rule);
+    padding-left: var(--sp-5);
+    gap: var(--sp-7);
+  }
+
+  .progress {
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    height: auto;
+    transform-origin: center top;
+  }
+
+  .step {
+    padding: 0;
+  }
+
+  .step::before {
+    left: calc(-1 * var(--sp-5) - 5px);
+    top: 0.9rem;
+  }
+}

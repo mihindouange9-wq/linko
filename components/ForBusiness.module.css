@@ -1,0 +1,151 @@
+.section {
+  padding-block: var(--sp-9);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: var(--sp-8);
+  align-items: start;
+}
+
+.copy {
+  display: grid;
+  justify-items: start;
+  gap: var(--sp-5);
+}
+
+.points {
+  width: 100%;
+  margin-block: var(--sp-3);
+  border-top: 1px solid var(--ink);
+}
+
+.points li {
+  display: grid;
+  gap: var(--sp-1);
+  padding: var(--sp-4) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.points h3 {
+  font-size: 1.125rem;
+  font-weight: 640;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+}
+
+.points p {
+  color: var(--slate);
+  font-size: 0.9375rem;
+}
+
+/* ── Fiche de demande ── */
+.sheet {
+  padding: 0;
+}
+
+.sheetHead {
+  display: grid;
+  gap: var(--sp-1);
+  padding-bottom: var(--sp-5);
+  border-bottom: 1px solid var(--ink);
+}
+
+.sheetTitle {
+  font-size: var(--h3);
+  font-weight: 680;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.sheetMeta {
+  color: var(--slate);
+  font-size: var(--small);
+}
+
+.need {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  padding: var(--sp-4) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.needMain {
+  display: grid;
+  min-width: 0;
+}
+
+.trade {
+  font-size: 1.125rem;
+  font-weight: 640;
+  letter-spacing: -0.015em;
+}
+
+.qty {
+  color: var(--slate);
+  font-weight: 480;
+}
+
+.note {
+  font-size: var(--small);
+  color: var(--slate);
+}
+
+.slots {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: none;
+}
+
+.pending {
+  opacity: 0.35;
+}
+
+.count {
+  min-width: 2.25rem;
+  text-align: right;
+  font-size: var(--small);
+  font-weight: 640;
+  color: var(--slate);
+}
+
+.count[data-full] {
+  color: var(--deep);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+  margin: var(--sp-4) 0 var(--sp-2);
+  font-size: var(--micro);
+  color: var(--slate);
+}
+
+.legend svg + svg {
+  margin-left: var(--sp-3);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-7);
+  }
+
+  .sheet {
+    padding: var(--sp-5);
+  }
+}
+
+@media (max-width: 420px) {
+  .need {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--sp-2);
+  }
+}

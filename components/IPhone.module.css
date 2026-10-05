@@ -1,0 +1,81 @@
+.phone {
+  --w: 300px;
+  width: min(100%, var(--w));
+  aspect-ratio: 300 / 612;
+  padding: 9px;
+  border-radius: 48px;
+  background: var(--ink);
+  box-shadow:
+    inset 0 0 0 2px #3a3e42,
+    0 30px 50px -34px rgb(17 19 21 / 0.6);
+}
+
+.screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 40px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* Barre d'état et îlot dynamique */
+.status {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  padding: 10px 24px 0;
+  font-size: 0.8125rem;
+  font-weight: 650;
+}
+
+.island {
+  position: absolute;
+  left: 50%;
+  top: 11px;
+  width: 78px;
+  height: 27px;
+  border-radius: 14px;
+  background: var(--ink);
+  transform: translateX(-50%);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icons svg {
+  display: block;
+  color: var(--ink);
+}
+
+.content {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 18px 0;
+  font-size: 0.8125rem;
+  line-height: 1.35;
+}
+
+.home {
+  flex: none;
+  width: 110px;
+  height: 4px;
+  margin: 8px auto 7px;
+  border-radius: 2px;
+  background: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .phone {
+    --w: 320px;
+  }
+}

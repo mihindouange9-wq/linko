@@ -1,0 +1,203 @@
+.section {
+  padding-block: var(--sp-9);
+}
+
+.head {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: var(--sp-8);
+  align-items: end;
+  margin-bottom: var(--sp-8);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: var(--sp-8);
+  align-items: start;
+}
+
+/* ── Fiche ── */
+.fiche {
+  padding: var(--sp-6);
+  border-radius: 14px;
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 0 30px 60px -40px rgb(17 19 21 / 0.6);
+}
+
+.ficheHead {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--sp-4);
+  padding-bottom: var(--sp-5);
+  border-bottom: 1px solid var(--ink-rule);
+}
+
+.monogram {
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 720;
+  letter-spacing: -0.02em;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 680;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.meta {
+  color: var(--ink-slate);
+  font-size: var(--small);
+}
+
+.fields {
+  display: grid;
+}
+
+.field {
+  --near: 0;
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: var(--sp-4);
+  padding: var(--sp-4) 0;
+  border-bottom: 1px solid var(--ink-rule);
+  transition: background-color var(--t-mid) linear;
+}
+
+.field dt {
+  font-size: var(--small);
+  color: var(--ink-slate);
+  padding-top: 0.15rem;
+}
+
+.field dd {
+  font-weight: 540;
+}
+
+/* Lentille : avec un curseur, la ligne la plus proche gagne en graisse et en contraste */
+.fiche[data-lens] .field dd {
+  font-weight: calc(420 + var(--near) * 260);
+  opacity: calc(0.62 + var(--near) * 0.38);
+}
+
+.field[data-active] dt {
+  color: var(--signal);
+}
+
+.big {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-right: 0.15rem;
+}
+
+.quote {
+  display: block;
+  margin-top: var(--sp-2);
+  font-weight: 460;
+  color: var(--paper);
+  quotes: "« " " »";
+}
+
+.by,
+.sub {
+  display: block;
+  font-size: var(--small);
+  font-weight: 420;
+  color: var(--ink-slate);
+}
+
+.ok,
+.dispo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ok {
+  color: var(--signal);
+}
+
+.demo {
+  margin-top: var(--sp-4);
+  font-size: var(--micro);
+  color: var(--ink-slate);
+}
+
+/* ── Annotations ── */
+.notes {
+  display: grid;
+  border-top: 1px solid var(--ink);
+}
+
+.note {
+  display: grid;
+  gap: var(--sp-2);
+  padding: var(--sp-5) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.noteTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: var(--h3);
+  font-weight: 560;
+  letter-spacing: -0.025em;
+  transition: font-weight var(--t-mid) var(--ease-settle);
+}
+
+.noteTitle::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--rule-strong);
+  transition:
+    background-color var(--t-fast) linear,
+    border-color var(--t-fast) linear;
+}
+
+.note[data-active] .noteTitle {
+  font-weight: 740;
+}
+
+.note[data-active] .noteTitle::before {
+  background: var(--signal);
+  border-color: var(--signal);
+}
+
+.noteText {
+  color: var(--slate);
+  max-width: 40ch;
+}
+
+@media (max-width: 900px) {
+  .head,
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-6);
+  }
+
+  .head {
+    margin-bottom: var(--sp-6);
+  }
+
+  .fiche {
+    padding: var(--sp-5);
+  }
+
+  .field {
+    grid-template-columns: 1fr;
+    gap: var(--sp-1);
+  }
+}

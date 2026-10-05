@@ -1,0 +1,97 @@
+{
+  "title": "LINKO — choisir le monde visuel",
+  "question": "Direction proposée : le Répertoire. La garder, prendre une alternative ou relancer.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Le Répertoire",
+      "kicker": "THE ROLL",
+      "lineage": "le carnet d'adresses où chacun garde « le bon électricien », onglets A–Z, lignes réglées",
+      "thesis": "LINKO devient le répertoire de la ville : une ligne réglée relie un besoin à un nom.",
+      "palette": ["#111315", "#F5F4EF", "#E8EAE7", "#667078", "#20C77A", "#087A4B"],
+      "materials": ["lignes réglées au filet", "onglets d'index en bord de page", "chiffres tabulaires", "aucune texture papier"],
+      "viewport": "Fond off-white, une seule ligne réglée traverse l'écran. À gauche, sur la ligne : « J'ai besoin d'un plombier » en grand corps. À droite, une fiche de compétence dérive. Au scroll et au curseur, les deux se cherchent, s'alignent sur la même ligne, et le symbole LINKO se forme au point de jonction. Les onglets d'index (01–10) servent de navigation sur le bord droit.",
+      "risk": "Peut glisser vers la nostalgie du papier si la grille est mollement tenue ; tout repose sur la précision du filet.",
+      "raised": [
+        {"from": "Variable Font Specimen", "raise": "La graisse du caractère variable suit la confiance du matching : une compétence qui correspond s'épaissit, celles qui ne correspondent pas s'amincissent et s'effacent."},
+        {"from": "Rhythm Machine Step Row", "raise": "Un seul témoin lumineux vert parcourt les onglets d'index et indique toujours où l'on est dans le système."},
+        {"from": "Glazier Colorfield Partition", "raise": "Le vert n'inonde que l'élément sélectionné ou disponible ; partout ailleurs, la page reste obsidienne et off-white."},
+        {"from": "Spy Dossier Title Sequence", "raise": "« Trouvé. » arrive en dernier, comme un tampon : bref, net, sans fondu."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Le Schéma de câblage",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "schémas électriques et plans de plomberie, la notation que les artisans lisent tous les jours",
+      "thesis": "Le besoin et la compétence sont deux bornes ; LINKO ferme le circuit et le courant passe en vert.",
+      "palette": ["#111315", "#F5F4EF", "#667078", "#20C77A"],
+      "materials": ["traits techniques", "bornes et nœuds", "cotes chiffrées"],
+      "viewport": "Un schéma presque vide : deux bornes, un interrupteur ouvert. Au scroll, le circuit se ferme et le vert circule jusqu'au symbole LINKO.",
+      "risk": "Familier : la métaphore réseau/nœuds est l'endroit où atterrissent la plupart des projets de « connexion »."
+    },
+    {
+      "id": "challenger-dossier",
+      "label": "Dossier de surveillance",
+      "verdict": "declined",
+      "lineage": "génériques de films d'espionnage des années 60",
+      "thesis": "Un réticule balaie des cadres de profils, un tampon tombe sur le bon.",
+      "palette": ["#111315", "#d9cbb0", "#c0392b"],
+      "materials": ["cadres en grille", "tampon"],
+      "viewport": "Mur de cadres, réticule en balayage.",
+      "risk": "La surveillance contredit la confiance.",
+      "case": "Bonne clarté de recherche, mais la surveillance trahit la marque de confiance.",
+      "kept": "« Trouvé. » posé en dernier, comme un tampon."
+    },
+    {
+      "id": "challenger-specimen",
+      "label": "Spécimen de caractère variable",
+      "verdict": "declined",
+      "lineage": "spécimens interactifs de fonderies",
+      "thesis": "Un axe de graisse transforme toute une grille de glyphes.",
+      "palette": ["#F5F4EF", "#111315", "#20C77A"],
+      "materials": ["caractère variable", "grille de glyphes"],
+      "viewport": "Une lettre géante pilotée par un curseur.",
+      "risk": "Parle aux typographes, pas aux clients d'artisans.",
+      "case": "Aucun lien avec le besoin ou les artisans.",
+      "kept": "La graisse variable devient le signal de correspondance."
+    },
+    {
+      "id": "challenger-stepper",
+      "label": "Boîte à rythmes",
+      "verdict": "declined",
+      "lineage": "boîtes à rythmes des années 80",
+      "thesis": "Seize touches et une lumière qui court.",
+      "palette": ["#222222", "#e2412d", "#f4a52a", "#f5f4ef"],
+      "materials": ["touches", "LED"],
+      "viewport": "Une rangée de pas avec un chenillard.",
+      "risk": "Ludique hors sujet.",
+      "case": "Ni le public ni le produit ne s'y reconnaissent.",
+      "kept": "Un seul témoin qui dit toujours « vous êtes ici »."
+    },
+    {
+      "id": "challenger-glazier",
+      "label": "Cloison vitrée colorée",
+      "verdict": "declined",
+      "lineage": "cloisons d'atelier de vitrier",
+      "thesis": "Une grille noire, une seule vitre allumée.",
+      "palette": ["#111315", "#eef0ee", "#1d4fbf"],
+      "materials": ["montants noirs", "verre"],
+      "viewport": "Un mur de vitres, une seule s'éclaire.",
+      "risk": "Le verre pousse vers le glassmorphism, interdit par le brief.",
+      "case": "Belle discipline de couleur, mais le verre est explicitement interdit.",
+      "kept": "La couleur réservée à ce qui compte maintenant."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "canon": true,
+  "canonCard": {
+    "label": "Le standard de la catégorie",
+    "thesis": "Une marketplace de services classique, exécutée avec soin.",
+    "palette": ["#ffffff", "#111315", "#20C77A"],
+    "materials": ["barre de recherche centrale", "grille de catégories", "captures d'application"],
+    "viewport": "Titre + barre de recherche, catégories en icônes, mockup de téléphone.",
+    "risk": "Indiscernable de la concurrence, contraire au brief."
+  },
+  "steer": true
+}

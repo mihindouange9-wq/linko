@@ -1,0 +1,117 @@
+/* L'entrée de recherche est une ligne du répertoire : elle se pose sur une règle. */
+.form {
+  --field-line: var(--ink);
+  --field-rule: var(--rule);
+  width: 100%;
+  max-width: 44rem;
+}
+
+.ink {
+  --field-line: var(--paper);
+  --field-rule: var(--ink-rule);
+}
+
+.field {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: end;
+  gap: var(--sp-3);
+  border-bottom: 1px solid var(--field-line);
+  transition: border-color var(--t-fast) linear;
+}
+
+.label {
+  font-weight: 560;
+  white-space: nowrap;
+  color: var(--fg);
+  padding-bottom: 0.85rem;
+}
+
+.input {
+  min-width: 0;
+  height: 3rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-size: 1.0625rem;
+  font-weight: 520;
+  color: var(--fg);
+}
+
+.input::placeholder {
+  color: var(--muted);
+  font-weight: 420;
+}
+
+.input:focus-visible {
+  outline: none;
+}
+
+.submit {
+  min-height: 2.5rem;
+  margin-bottom: 0.25rem;
+  padding-inline: 1.1rem;
+}
+
+.error {
+  margin-top: var(--sp-2);
+  font-size: var(--small);
+  color: #b3261e;
+}
+
+.ink .error {
+  color: #ff8a80;
+}
+
+/* Suggestions : entrées tabulaires séparées par des filets */
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.suggestions li {
+  border-bottom: 1px solid var(--field-rule);
+}
+
+.chip {
+  min-height: 2.5rem;
+  padding: 0 0.85rem;
+  border: 0;
+  border-right: 1px solid var(--field-rule);
+  background: transparent;
+  font-size: var(--small);
+  font-weight: 540;
+  color: var(--fg);
+  transition: background-color var(--t-fast) linear;
+}
+
+.suggestions li:first-child .chip {
+  padding-left: 0;
+}
+
+.suggestions li:last-child .chip {
+  border-right: 0;
+}
+
+.chip:hover {
+  color: var(--accent-text);
+}
+
+@media (max-width: 560px) {
+  .field {
+    grid-template-columns: 1fr auto;
+  }
+
+  .label {
+    grid-column: 1 / -1;
+    padding: 0.4rem 0 0;
+    font-size: var(--small);
+    color: var(--muted);
+  }
+
+  .input {
+    grid-column: 1;
+    height: 2.75rem;
+  }
+}

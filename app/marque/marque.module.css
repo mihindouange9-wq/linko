@@ -1,0 +1,617 @@
+.page {
+  padding-inline: var(--gutter);
+  padding-bottom: var(--sp-9);
+}
+
+.hero {
+  max-width: var(--max);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(7rem, 18vw, 15rem);
+  gap: var(--sp-7);
+  align-items: end;
+  padding-top: clamp(7rem, 14vh, 10rem);
+  padding-bottom: var(--sp-8);
+  border-bottom: 1px solid var(--ink);
+}
+
+.title {
+  font-size: var(--display);
+  font-weight: 660;
+  font-stretch: 90%;
+  letter-spacing: -0.04em;
+}
+
+.intro {
+  margin-top: var(--sp-5);
+  font-size: var(--lead);
+  line-height: 1.45;
+  color: var(--slate);
+  max-width: 46ch;
+}
+
+.heroMark {
+  aspect-ratio: 1;
+}
+
+.layout {
+  max-width: var(--max);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 14rem minmax(0, 1fr);
+  gap: var(--sp-8);
+}
+
+.toc {
+  position: sticky;
+  top: var(--sp-6);
+  align-self: start;
+  padding-top: var(--sp-7);
+}
+
+.toc ol {
+  border-left: 1px solid var(--rule);
+}
+
+.toc a {
+  display: block;
+  padding: 0.4rem 0 0.4rem var(--sp-4);
+  font-size: var(--small);
+  font-weight: 520;
+  text-decoration: none;
+  color: var(--slate);
+  margin-left: -1px;
+  border-left: 1px solid transparent;
+}
+
+.toc a:hover {
+  color: var(--ink);
+  border-left-color: var(--ink);
+}
+
+.content {
+  min-width: 0;
+  max-width: 62rem;
+}
+
+.block {
+  display: grid;
+  gap: var(--sp-5);
+  padding-block: var(--sp-8);
+  border-bottom: 1px solid var(--rule);
+  scroll-margin-top: var(--sp-5);
+}
+
+.block > h2 {
+  font-size: var(--h2);
+  font-weight: 640;
+  font-stretch: 92%;
+  margin-bottom: var(--sp-3);
+}
+
+.block > p {
+  max-width: 68ch;
+}
+
+.sub {
+  margin-top: var(--sp-5);
+  font-size: 1.25rem;
+  font-weight: 640;
+  letter-spacing: -0.015em;
+}
+
+.note {
+  font-size: var(--small);
+  color: var(--slate);
+  max-width: 68ch;
+}
+
+.defs {
+  border-top: 1px solid var(--ink);
+}
+
+.defs > div {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: var(--sp-5);
+  padding: var(--sp-4) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.defs dt {
+  font-weight: 640;
+}
+
+.defs dd {
+  max-width: 60ch;
+}
+
+.statement {
+  font-size: var(--h3);
+  font-weight: 560;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  max-width: 34ch !important;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.85rem 1rem 0.85rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.table thead th {
+  font-size: var(--small);
+  font-weight: 600;
+  color: var(--slate);
+  border-bottom: 1px solid var(--ink);
+}
+
+.table tbody th {
+  font-weight: 640;
+  width: 28%;
+}
+
+.table code,
+.swatches code {
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: 0.8125rem;
+}
+
+.us th,
+.us td {
+  font-weight: 640;
+}
+
+.us th::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--signal);
+  margin-right: 0.5rem;
+}
+
+.traits {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--sp-5);
+  border-top: 1px solid var(--ink);
+  padding-top: var(--sp-5);
+}
+
+.traits h3,
+.principles h3,
+.rules h3,
+.elements h3,
+.ds h3 {
+  font-size: 1.125rem;
+  font-weight: 660;
+  letter-spacing: -0.015em;
+  margin-bottom: var(--sp-2);
+}
+
+.traits p,
+.principles p,
+.rules p,
+.elements p {
+  color: var(--slate);
+  font-size: 0.9375rem;
+}
+
+.signature {
+  font-size: var(--h2);
+  font-weight: 660;
+  font-stretch: 90%;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  max-width: 14ch !important;
+}
+
+/* ── Logo ── */
+.construct {
+  display: grid;
+  gap: var(--sp-3);
+  max-width: 34rem;
+  padding: var(--sp-5);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  background: var(--white);
+}
+
+.construct figcaption {
+  font-size: var(--small);
+  color: var(--slate);
+}
+
+.svgLabel {
+  font-size: 4.2px;
+  fill: var(--slate);
+  font-family: var(--font);
+}
+
+.variants {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--sp-3);
+}
+
+.variant {
+  display: grid;
+  place-items: center;
+  gap: var(--sp-4);
+  min-height: 11rem;
+  padding: var(--sp-5);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.variant > span:last-child {
+  font-size: var(--micro);
+  color: var(--slate);
+}
+
+.variant :global(.wordmark) {
+  font-size: 1.9rem;
+}
+
+.variantInk {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+.variantInk > span:last-child {
+  color: var(--ink-slate) !important;
+}
+
+.appIcon {
+  display: grid;
+  place-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 1.1rem;
+  background: var(--ink);
+}
+
+.rules {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--sp-6);
+}
+
+.sizes {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-2);
+}
+
+/* ── Couleurs ── */
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--sp-5) var(--sp-4);
+}
+
+.swatches li {
+  display: grid;
+  gap: 0.2rem;
+  font-size: var(--small);
+}
+
+.chip {
+  display: block;
+  height: 6rem;
+  border-radius: 10px;
+  border: 1px solid var(--rule);
+  margin-bottom: var(--sp-2);
+}
+
+.swName {
+  font-size: 1rem;
+  font-weight: 660;
+}
+
+.swRole {
+  color: var(--ink);
+}
+
+.swRatio {
+  color: var(--slate);
+}
+
+.proportion {
+  display: flex;
+  height: 2.25rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+}
+
+/* ── Typographie ── */
+.specimen {
+  border-top: 1px solid var(--ink);
+}
+
+.specimen li {
+  display: grid;
+  grid-template-columns: 15rem minmax(0, 1fr);
+  gap: var(--sp-5);
+  align-items: baseline;
+  padding: var(--sp-4) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.specMeta {
+  display: grid;
+  font-size: var(--micro);
+  color: var(--slate);
+}
+
+.specMeta strong {
+  font-size: var(--small);
+  color: var(--ink);
+}
+
+.specSample {
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  overflow-wrap: anywhere;
+}
+
+.axes {
+  display: grid;
+  gap: var(--sp-3);
+  padding: var(--sp-5);
+  border-radius: 12px;
+  background: var(--soft);
+}
+
+.axes p:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2) var(--sp-6);
+  font-size: var(--h3);
+  letter-spacing: -0.02em;
+}
+
+/* ── Système ── */
+.elements {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--sp-4);
+}
+
+.elements > li > div {
+  display: grid;
+  place-items: center;
+  height: 6.5rem;
+  margin-bottom: var(--sp-3);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--white);
+}
+
+.elRule span {
+  width: 80%;
+  border-bottom: 1px solid var(--ink);
+  font-weight: 680;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+}
+
+.elTabs {
+  justify-items: end;
+  align-content: center;
+  gap: 2px;
+  padding-right: 0 !important;
+}
+
+.elTabs i {
+  display: block;
+  width: 1.4rem;
+  height: 1.3rem;
+  border-radius: 4px 0 0 4px;
+  background: var(--soft);
+}
+
+.elTabs i[data-on] {
+  width: 2rem;
+  background: var(--ink);
+}
+
+.elEntry {
+  grid-template-columns: auto auto auto;
+  gap: 0.6rem;
+  font-size: var(--small);
+}
+
+/* ── Motion ── */
+.principles {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--sp-4);
+  border-top: 1px solid var(--ink);
+  padding-top: var(--sp-5);
+}
+
+.micro {
+  display: grid;
+  gap: var(--sp-2);
+  max-width: 68ch;
+}
+
+.micro li {
+  padding-left: var(--sp-4);
+  position: relative;
+}
+
+.micro li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 0.4rem;
+  height: 1px;
+  background: var(--ink);
+}
+
+/* ── Expérience ── */
+.tree {
+  display: grid;
+  gap: var(--sp-3);
+  font-weight: 620;
+}
+
+.tree ul {
+  margin: var(--sp-2) 0 0 0.35rem;
+  padding-left: var(--sp-4);
+  border-left: 1px solid var(--rule-strong);
+  font-weight: 440;
+  display: grid;
+  gap: 0.25rem;
+  color: var(--slate);
+}
+
+.flows {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--sp-5);
+}
+
+.flow h4 {
+  font-size: 1rem;
+  font-weight: 680;
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px solid var(--ink);
+}
+
+.flow ol {
+  counter-reset: f;
+}
+
+.flow li {
+  counter-increment: f;
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.9375rem;
+}
+
+.flow li::before {
+  content: counter(f);
+  color: var(--slate);
+  font-size: var(--small);
+}
+
+/* ── Design system ── */
+.ds {
+  display: grid;
+  gap: var(--sp-7);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3) var(--sp-5);
+  margin-bottom: var(--sp-3);
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--small);
+  font-weight: 560;
+}
+
+.ok {
+  color: var(--deep);
+}
+
+.tree2 {
+  margin: 0;
+  padding: var(--sp-5);
+  border-radius: 12px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  overflow-x: auto;
+}
+
+@media (max-width: 1100px) {
+  .principles,
+  .elements {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .traits,
+  .variants {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .toc {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .heroMark {
+    width: 6rem;
+    order: -1;
+  }
+
+  .defs > div,
+  .specimen li {
+    grid-template-columns: 1fr;
+    gap: var(--sp-2);
+  }
+
+  .rules,
+  .flows,
+  .swatches {
+    grid-template-columns: 1fr;
+  }
+
+  .table tbody th {
+    width: 40%;
+  }
+}
+
+@media (max-width: 560px) {
+  .traits,
+  .variants,
+  .principles,
+  .elements {
+    grid-template-columns: 1fr;
+  }
+
+  .table {
+    font-size: var(--small);
+  }
+}
