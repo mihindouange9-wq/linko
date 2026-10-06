@@ -3,6 +3,7 @@
 Site vitrine et plateforme de marque de LINKO, la marketplace de compétences qui relie un besoin à la bonne
 personne. Lancement au Gabon (Libreville), puis Afrique francophone.
 
+- **Site en ligne** : https://linko-s3ve.onrender.com
 - **Code source** : https://github.com/mihindouange9-wq/linko
 - **Hébergement** : Render (déploiement automatique à chaque `git push` sur `main`, voir `render.yaml`)
 - **Stack** : Next.js 16 · React 19 · TypeScript · GSAP (ScrollTrigger, Flip, CustomEase) · Mona Sans variable
