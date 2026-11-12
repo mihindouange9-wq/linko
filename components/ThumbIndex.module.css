@@ -165,6 +165,10 @@
   color: var(--ink);
   border: 1px solid var(--rule);
   box-shadow: 0 20px 40px -20px rgb(17 19 21 / 0.45);
+  /* téléphone en paysage : la liste défile au lieu de sortir par le haut de l'écran */
+  max-height: calc(100dvh - 5.75rem - max(0.75rem, env(safe-area-inset-bottom)));
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .sheet[hidden] {

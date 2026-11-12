@@ -42,6 +42,19 @@ export default function FinalCta() {
           <a href="#entreprises">Entreprises</a>
           <Link href="/marque">Plateforme de marque</Link>
         </nav>
+        {/* Le partenaire sur sa règle, comme une entrée ; son logo reste en ivoire, tel que sa charte le fixe. */}
+        <p className={styles.partner}>
+          <span>En partenariat avec</span>
+          <img
+            className={styles.partnerLogo}
+            src="/partenaires/methode-aura.png"
+            alt="MÉTHODE AURA"
+            width={800}
+            height={246}
+            loading="lazy"
+            decoding="async"
+          />
+        </p>
         <p className={styles.legal}>
           © 2026 LINKO. Les profils, noms, avis et demandes présentés sur ce site sont fictifs et servent à illustrer le
           fonctionnement du service.

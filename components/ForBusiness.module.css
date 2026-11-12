@@ -11,6 +11,7 @@
 
 .copy {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   justify-items: start;
   gap: var(--sp-5);
 }
@@ -147,5 +148,14 @@
     flex-direction: column;
     align-items: flex-start;
     gap: var(--sp-2);
+  }
+}
+
+/* très petit écran : le libellé du bouton passe sur deux lignes au lieu d'élargir la page */
+@media (max-width: 359.98px) {
+  .copy :global(.btn) {
+    max-width: 100%;
+    padding-block: 0.6rem;
+    white-space: normal;
   }
 }

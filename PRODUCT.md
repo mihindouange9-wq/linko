@@ -50,7 +50,8 @@ Users mostly search from a phone, often under time pressure (something is broken
 ## Evidence on Hand
 
 - Logo PNG (above). Nothing else.
-- No real figures, testimonials, partners, or live app yet. All profiles, reviews and numbers shown are demonstration data and must be labelled as such. Never invent user counts, coverage claims, prices or partners.
+- Partner: MÉTHODE AURA (partnership stated by the user on 2026-10-06), shown in the footer with its official ivory lockup.
+- No real figures, testimonials, other partners, or live app yet. All profiles, reviews and numbers shown are demonstration data and must be labelled as such. Never invent user counts, coverage claims, prices or partners.
 
 ## Product Principles
 

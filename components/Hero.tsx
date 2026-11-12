@@ -91,13 +91,26 @@ export default function Hero() {
               const band = r2 - r1;
               S = Math.max(80, Math.min(W * 0.34, band - tagH - 24));
               finalPos = { x: W * 0.5, y: (r1 + r2) / 2 };
-              baseNeed = { x: W * 0.27, y: finalPos.y - S * 0.08, r: -16 };
-              baseSkill = { x: W * 0.73, y: finalPos.y + S * 0.08, r: 22 };
               // étiquettes à poste fixe, entre les deux règles
               tagPos = {
                 skill: { x: line2.clientWidth - gutter, y: r1 + 8 },
                 need: { x: gutter, y: r2 - tagH - 8 },
               };
+              // chaque pièce reste dégagée de l'étiquette posée de son côté (son point ne passe pas dessous),
+              // sans jamais sortir de la bande entre les deux lignes
+              const needY = Math.max(r1 + S * 0.5 + 4, Math.min(finalPos.y - S * 0.08, tagPos.need.y - S * 0.58 - 4));
+              const skillY = Math.min(r2 - S * 0.5 - 4, Math.max(finalPos.y + S * 0.08, tagPos.skill.y + tagH + S * 0.58 + 4));
+              // écran étroit : si une pièce monte à hauteur de l'étiquette d'en face, elle s'en écarte de côté
+              let needX = W * 0.27;
+              let skillX = W * 0.73;
+              if (needY - S * 0.5 < tagPos.skill.y + tagH) {
+                needX = Math.max(S * 0.5 + 4, Math.min(needX, tagPos.skill.x - skillTag.offsetWidth - S * 0.42 - 4));
+              }
+              if (skillY + S * 0.5 > tagPos.need.y) {
+                skillX = Math.min(W - S * 0.5 - 4, Math.max(skillX, tagPos.need.x + needTag.offsetWidth + S * 0.42 + 4));
+              }
+              baseNeed = { x: needX, y: needY, r: -16 };
+              baseSkill = { x: skillX, y: skillY, r: 22 };
             }
             need.style.width = need.style.height = `${S}px`;
             skill.style.width = skill.style.height = `${S}px`;
@@ -240,7 +253,8 @@ export default function Hero() {
             setNeed({ x: state.need.x - S / 2, y: state.need.y - S / 2, rotation: state.need.r });
             setSkill({ x: state.skill.x - S / 2, y: state.skill.y - S / 2, rotation: state.skill.r });
             if (desktop) {
-              const tx = Math.min(state.need.x - S / 2 - 14 - needTag.offsetWidth, text2Left - needTag.offsetWidth - 8);
+              // jamais hors de la marge : sur un écran étroit, la seconde ligne ne pousse pas l'étiquette hors champ
+              const tx = Math.max(gutter, Math.min(state.need.x - S / 2 - 14 - needTag.offsetWidth, text2Left - needTag.offsetWidth - 8));
               const ty = Math.min(state.need.y - needTag.offsetHeight / 2 + S * 0.05, needTagMaxY);
               place(needTag, tx, ty);
               place(skillTag, state.skill.x - S * 0.36, state.skill.y - S * 0.42);

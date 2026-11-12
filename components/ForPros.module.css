@@ -22,6 +22,7 @@
 }
 
 .pricesLink {
+  padding-block: 0.4rem;
   font-size: var(--small);
   color: var(--muted);
   text-decoration-color: var(--line-strong);

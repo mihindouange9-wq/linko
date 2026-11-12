@@ -76,6 +76,8 @@
 
 .block {
   display: grid;
+  /* la colonne ne s'élargit jamais au-delà de l'écran, même avec un tableau dense */
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--sp-5);
   padding-block: var(--sp-8);
   border-bottom: 1px solid var(--rule);
@@ -613,5 +615,27 @@
 
   .table {
     font-size: var(--small);
+  }
+
+  .table th,
+  .table td {
+    padding-right: 0.6rem;
+  }
+
+  /* tableau des courbes : le nom reste entier, seule la valeur technique se coupe */
+  .table tbody th:has(code) {
+    width: auto;
+    white-space: nowrap;
+  }
+
+  .table td code {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .table tbody th:has(code) {
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 }

@@ -72,8 +72,9 @@ render.yaml             configuration de déploiement Render (Blueprint)
 - Tous les profils, diplômes, avis et quartiers affichés sont **fictifs** et signalés comme tels.
 - Les tarifs d'abonnement (Essentiel 3 000 FCFA/mois, Pro 8 000 FCFA/mois, premier mois offert) sont des
   **propositions de lancement** à confirmer : une seule liste à modifier, `PLANS` dans `lib/data.ts`.
-- Aucun chiffre d'inscrits, de couverture ou de partenaires n'est affiché : à ajouter uniquement avec des données
-  réelles.
+- Aucun chiffre d'inscrits ou de couverture n'est affiché : à ajouter uniquement avec des données réelles.
+- Partenaire affiché en pied de page : **MÉTHODE AURA** (logo officiel ivoire dans `public/partenaires/`, jamais
+  recoloré ni déformé). Tout autre partenaire s'ajoute uniquement s'il est réel.
 
 ## Qualité
 

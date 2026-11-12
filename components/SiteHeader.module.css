@@ -51,8 +51,9 @@
   transform-origin: left center;
 }
 
+/* Accueil : la barre basse porte les chapitres. Ailleurs, le retour au site reste visible. */
 @media (max-width: 720px) {
-  .link:not(:last-child) {
+  .header:not(.plain) .link:not(:last-child) {
     display: none;
   }
 }
